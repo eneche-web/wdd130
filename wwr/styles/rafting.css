@@ -55,6 +55,7 @@ article {
 nav {
     display: flex;
     justify-content: space-around;
+    gap: 20px;
 }
 
 nav a {
