@@ -4,17 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Contact Us | Silver Current River Rafting</title>
     <meta name="description"
-      content="recreation that involves navigating a non-motorize watercraft down free flowing rivers">
+      content="Contact Silver Current River Rafting for reservations, questions, and adventure information.">
     <meta name="author" content="Eneche John">
     <link rel="stylesheet" href="styles/rafting.css">
-    <title>Contact Us | Silver Current River Rafting</title>
+
 </head>
 
 <body>
     <header>
+        <img src="images/rafting-logo.png" alt="thrilling and safe experience" width="500">
         <nav>
-            <img src="images/rafting-logo.png" alt="thrilling and safe experience" width="500">
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
@@ -23,82 +24,96 @@
     </header>
 
     <main>
-        <h1>Contact Us</h1>
-        <!...Company Information...>
-            <section class="company-info">
-                <h2>Company Information</h2>
-                <p>Email:info@silvercurrentriverrafting.com</p>
-                <p>Phone:+2348135692810</p>
-                <p>Address:Lagos,Nigeria</p>
-
-                <iframe src="https://www.google.com/maps/embed?pb=" width="600" height="450"
+        <section class="contact-header">
+            <h1>SILVER CURRENT RIVER RAFTING LTD</h1>
+        </section>
+        <section class="company-info">
+            <h2>Company Information</h2>
+            <p><strong>Email:</strong>info@silvercurrentriverrafting.com</p>
+            <p><strong>Phone:</strong>+2348135692810</p>
+            <p><strong>Address:</strong>suit 4,Babayaro plaza,lekki phase one,Lagos,Nigeria</p>
+        </section>
+        <section class="contact-layout">
+            <div class="map-section">
+                <h2>Find us</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=" width="500" height="450"
                   style="border: 0;" allowfullscreen="" loading="lazy">
                 </iframe>
-            </section>
-            <!...employment Profile...>
-                <section class="employees">
-                    <h2>Meet Our Team</h2>
+            </div>
 
-                    <figure>
-                        <img scr="images/manager.webp" alt="Johnson Abel">
-                        <figcaption>Johnson Abel-General Manager</figcaption>
-                    </figure>
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form action="#" method="post">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
 
-                    <figure>
-                        <img src="images/guide.webp" alt="Jack Moor">
-                        <figcaption>Jack Moor - Lead River Guide</figcaption>
-                    </figure>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
 
-                    <figure>
-                        <img src="images/customer-service.webp" alt="Alice Brown">
-                        <figcaption>Alice Brown- Customer Service Manager</figcaption>
-                    </figure>
-                </section>
+                    <fieldset>
+                        <legend>Purpose of Message</legend>
+                        <label>
+                            <input type="radio" name="purpose" value="general" required>General
+                            Inquiry
+                        </label>
 
-                <!...Contact Form...>
-                    <section class="contact-form">
-                        <h2>Send Us a Message</h2>
+                        <label>
+                            <input type="radio" name="purpose" value="reservation">Reservation
+                            Question
+                        </label>
 
-                        <form action="#" method="post">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
+                        <label>
+                            <input type="radio" name="purpose" value="suggestion">Website
+                            Suggestion
+                        </label>
+                    </fieldset>
 
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
 
-                            <fieldset>
-                                <legend>Purpose of Message</legend>
-                                <label>
-                                    <input type="radio" name="purpose" value="general"
-                                      required>General Inquiry
-                                </label>
+                    <label>
+                        <input type="checkbox" name="newsletter">please subscribe me to the
+                        monthly newsletter
+                    </label>
 
-                                <label>
-                                    <input type="radio" name="purpose"
-                                      value="reservation">Reservation Question
-                                </label>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+        <section class="employees">
+            <h2>Meet Our Team</h2>
+            <figure>
+                <img src="images/manager.png" alt="Johnson Abel">
+                <figcaption>Johnson Abel-General Manager</figcaption>
+            </figure>
 
-                                <label>
-                                    <input type="radio" name="purpose" value="suggestion">Website
-                                    Suggestion
-                                </label>
-                            </fieldset>
+            <figure>
+                <img src="images/guide.webp" alt="Jack Moor">
+                <figcaption>Jack Moor - Lead River Guide</figcaption>
+            </figure>
 
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5"></textarea>
-
-                            <label>
-                                <input type="checkbox" name="newsletter">please subscribe me to the
-                                monthly newsletter
-                            </label>
-
-                            <button type="submit">Send Message</button>
-                        </form>
-                    </section>
-
+            <figure>
+                <img src="images/customer-service.png" alt="Alice Brown">
+                <figcaption>Alice Brown- Customer Service Manager</figcaption>
+            </figure>
+        </section>
     </main>
     <footer>
         <p>©2026 Silver Current River Rafting</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="Facebook icon">
+            </a>
+
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.png" alt="Linkedin icon">
+            </a>
+
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="Instagram icon">
+            </a>
+        </nav>
+
     </footer>
 </body>
 

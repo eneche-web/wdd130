@@ -178,28 +178,61 @@ footer {
     text-decoration: none;
 }
 
+.company-info,
+.map-section,
+.employees,
+.contact-form {
+    margin: 2rem auto;
+    max-width: fit-content;
+    padding: 1rem;
+}
+
+.contact-header {
+    text-align: center;
+    margin: 2rem 0 1rem;
+}
+
+.contact-header h1 {
+    position: static;
+    margin: 0;
+}
+
+.company-info {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 .employees {
     display: flex;
     justify-content: space-around;
     gap: 1rem;
     flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 3rem auto;
+}
+
+.employees h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 .employees figure {
     text-align: center;
+    margin: 0;
 }
 
 .employees img {
-    width: 200px;
-    height: auto;
+    width: 250px;
+    height: 200;
     border-radius: 8px;
+    object-fit: cover;
 }
 
 .contact-form form {
     display: flex;
     flex-direction: column;
-    max-width: 600px;
-    margin: 0 auto;
+    gap: 1rem;
 }
 
 .contact-form label,
@@ -226,14 +259,36 @@ button[type="submit"] {
     color: #fff;
     border: none;
     cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
 }
 
 button[type="submit"]:hover {
     opacity: 0.9;
 }
 
-.company-info iframe {
+.map-section iframe {
     width: 100%;
     max-width: 700px;
     margin-top: 1rem;
+
+}
+
+.page-title {
+    text-align: center;
+    margin: 2rem;
+}
+
+.page-title h1 {
+    margin: 0;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    align-items: start;
+
 }
