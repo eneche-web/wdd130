@@ -223,8 +223,8 @@ footer {
 }
 
 .employees img {
-    width: 250px;
-    height: 200;
+    width: 200px;
+    height: 200px;
     border-radius: 8px;
     object-fit: cover;
 }
