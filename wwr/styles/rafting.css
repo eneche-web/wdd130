@@ -77,7 +77,26 @@ p {
 .hero img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 500px;
+    object-fit: cover;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #e6f2ff;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 1rem;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    gap: 10px;
 }
 
 h1 {
@@ -268,7 +287,9 @@ button[type="submit"]:hover {
 }
 
 .map-section iframe {
+    border: 0;
     width: 100%;
+    height: 450;
     max-width: 700px;
     margin-top: 1rem;
 
@@ -291,4 +312,58 @@ button[type="submit"]:hover {
     margin: 2rem auto;
     align-items: start;
 
+}
+
+.cat {
+    text-align: center;
+    padding: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: .75rem 1.5rem;
+    background-color: #005f99;
+    color: #e6f2ff;
+    text-decoration: none;
+    border-radius: 2rem;
+}
+
+.grid-content {
+    width: 100%;
+
+}
+
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(3, fr);
+    gap: 20px;
+    padding: 2rem;
+}
+
+.trip-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+
+}
+
+.trip-table {
+    padding: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    bottom: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #005f99;
+    color: #fff;
 }
